@@ -24,6 +24,10 @@ func NewClient(serviceUrl string, namespace string) (*Client, error) {
 	}, nil
 }
 
+func (c *Client) Close() {
+	c.oxiaCli.Close()
+}
+
 type MessageId string
 
 type SendResult struct {

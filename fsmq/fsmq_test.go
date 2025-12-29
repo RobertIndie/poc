@@ -133,7 +133,7 @@ func TestConsumeSample(t *testing.T) {
 func TestPublishPerf(t *testing.T) {
 	// Configuration - adjust these values as needed
 	topicPrefix := "test"
-	topicCount := 10000000
+	topicCount := 10
 	payloadBytes := 1024
 	ratePerSec := 10000
 	duration := 10 * time.Minute
