@@ -1,0 +1,12 @@
+services:
+  oxia:
+    image: oxia/oxia:main
+    command:
+      - /oxia/bin/oxia
+      - standalone
+      - -s
+      - "1"
+    ports:
+      - "6648:6648"
+      - "8080:8080"
+
